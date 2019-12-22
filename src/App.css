@@ -1,5 +1,50 @@
-@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+
+body {
+  /* Never get smaller than this */
+  font-size: 2.5vh;
+  font-family: Montserrat, sans-serif;
+}
+
+
+
+
+
 
 .App {
   text-align: left;
+  margin: 2% 0% 5% 0%;
+}
+
+
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  line-height: 160px;
+  background: rgba(0,0,0,0);
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+img {
+height: 100%;
+width : 100%;
+object-fit: cover;
+}
+
+#description-project {
+  position: relative;
+  margin: 5% 5% 0% 5%;
+}
+
+
+#tag {
+  position: absolute;
+
 }

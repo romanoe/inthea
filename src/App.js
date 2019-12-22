@@ -1,18 +1,130 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Card, Avatar } from 'antd';
+
 import './App.css';
 
+const { Meta } = Card;
+
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-      <h1>Noemi Romano</h1>
-      <Row>
-      <Col span={12}><Button type="primary">Button</Button></Col>
-      <Col span={12}>col-12</Col>
-    </Row>
 
+      <div>
+      <h1 style={{marginBottom: '-10px', marginLeft: '5%'}}> Noemi <b>Romano</b> </h1>
+
+      </div>
+      <div style={{ padding: '30px' }}>
+        <Row gutter={16}>
+          <Col span={8}>
+            <Card
+            cover={
+                <img
+                alt="example"
+                src="../../images/diversity-1.png"
+                  />}>
+
+                  <Meta
+
+            title="Indice de marchabilité"
+            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            />
+            </Card>
+          </Col>
+
+          <Col span={8}>
+            <Card
+            cover={
+                <img
+                alt="example"
+                src="../../images/diversity-1.png"
+                  />}>
+
+                  <Meta
+
+            title="Gestion réseau routier au Burkina Faso"
+            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            />
+            </Card>
+          </Col>
+
+
+          <Col span={8}>
+            <Card
+            cover={
+                <img
+                alt="example"
+                src="../../images/geometeorites.gif"
+                  />}>
+
+                  <Meta
+
+            title="Météorites"
+            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            />
+            </Card>
+          </Col>
+        </Row>
+
+        <Row gutter={16}>
+          <Col span={8}>
+            <Card
+            cover={
+                <img
+                alt="example"
+                src="../../images/diversity-1.png"
+                  />}>
+
+                  <Meta
+
+            title="Les dialectes comme unités héritables"
+            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            />
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card
+            cover={
+                <img
+                alt="example"
+                src="../../images/diversity-1.png"
+                  />}>
+
+                  <Meta
+
+            title="Métasanté"
+            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            />
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card
+            cover={
+                <img
+                alt="example"
+                src="../../images/diversity-1.png"
+                  />}>
+
+                  <Meta
+
+            title="Somnolonce diurne et rues prioritaires"
+            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            />
+            </Card>
+          </Col>
+        </Row>
+      </div>
+
+
+
+
+
+
+
+  <footer style={{textAlign:'center'}}>
+  <code>© 2019 Noemi Romano</code>
+  </footer>
       </div>
     );
   }
