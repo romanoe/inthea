@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Avatar } from 'antd';
+import { Row, Col, Card } from 'antd';
 
 import './App.css';
 
@@ -78,7 +78,7 @@ class App extends Component {
 
                   <Meta
 
-            title="Les dialectes comme unités héritables"
+            title="Cartographie des familles dialectales"
             description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
             />
             </Card>
@@ -94,7 +94,7 @@ class App extends Component {
                   <Meta
 
             title="Métasanté"
-            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            description="Une cohorte numérique participative pour le monitoring de l’état de santé de la population lausannoise"
             />
             </Card>
           </Col>
