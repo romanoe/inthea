@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col, Card } from 'antd';
-
+import { Row, Col, Card, Carousel} from 'antd';
 import './App.css';
-
 const { Meta } = Card;
+// import {metasante} from '../images/metasante.gif';
+//
+
+
 
 class App extends Component {
 
@@ -16,21 +18,21 @@ class App extends Component {
 
       </div>
       <div style={{ padding: '30px' }}>
-        <Row gutter={16}>
-          <Col span={8}>
+        <Row gutter={16} type="flex">
+          <Col span={8}  >
             <Card
             cover={
                 <img
                 alt="example"
-                src="../../images/diversity-1.png"
+                src={require("./images/metasante.gif")}
                   />}>
 
                   <Meta
 
-            title="Indice de marchabilité"
-            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            title="Métasanté"
             />
             </Card>
+
           </Col>
 
           <Col span={8}>
@@ -38,13 +40,13 @@ class App extends Component {
             cover={
                 <img
                 alt="example"
-                src="../../images/web_sig.gif"
+                 src={require("./images/web_sig.gif")}
                   />}>
 
                   <Meta
 
             title="Gestion réseau routier au Burkina Faso"
-            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+
             />
             </Card>
           </Col>
@@ -60,56 +62,85 @@ class App extends Component {
 
                   <Meta
 
-            title="Météorites"
-            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            title="Géométéorites"
+
             />
             </Card>
           </Col>
         </Row>
 
-        <Row gutter={16}>
+        <Row gutter={16} type="flex">
           <Col span={8}>
-            <Card
+            <Card hoverable
             cover={
-                <img
-                alt="example"
-                src="../../images/diversity-1.png"
-                  />}>
+              <Carousel autoplay>
+                <div>
+                  <img   src={require("./images/p1_spatial_trend.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img src={require("./images/p2_spatial_trend.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img   src={require("./images/p3_spatial_trend.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img   src={require("./images/p4_spatial_trend.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img   src={require("./images/p5_spatial_trend.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img   src={require("./images/diversity_map.png")}     alt="example"/>
+                </div>
+
+              </Carousel>}>
 
                   <Meta
 
-            title="Cartographie des familles dialectales"
-            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
+            title="Cartographie des dialectes"
+
             />
             </Card>
           </Col>
           <Col span={8}>
             <Card
             cover={
-                <img
-                alt="example"
-                src="../../images/diversity-1.png"
-                  />}>
+              <Carousel autoplay>
+                <div>
+                  <img   src={require("./images/indice.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img src={require("./images/lisa_indice.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img src={require("./images/z_eau-1.png")}     alt="example"/>
+                </div>
+              </Carousel>
+    }>
 
                   <Meta
 
-            title="Métasanté"
-            description="Une cohorte numérique participative pour le monitoring de l’état de santé de la population lausannoise"
+            title="Indice de marchabilité"
+
             />
             </Card>
           </Col>
           <Col span={8}>
             <Card
             cover={
-                <img
-                alt="example"
-                src="../../images/diversity-1.png"
-                  />}>
+              <Carousel autoplay>
+                <div>
+                  <img   src={require("./images/voronoi_rue_lsne-1.png")}     alt="example"/>
+                </div>
+                <div>
+                  <img src={require("./images/example_indice_priorité.png")}     alt="example"/>
+                </div>
+
+              </Carousel>}>
 
                   <Meta
 
             title="Somnolonce diurne et rues prioritaires"
-            description="Un indice qui définit la marchabilité d'un quartier, à Lausanne et à Genève"
             />
             </Card>
           </Col>
@@ -123,7 +154,7 @@ class App extends Component {
 
 
   <footer style={{textAlign:'center'}}>
-  <code>© 2019 Noemi Romano</code>
+  <code>© 2020 Noemi Romano</code>
   </footer>
       </div>
     );
