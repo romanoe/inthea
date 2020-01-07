@@ -38,7 +38,7 @@ class App extends Component {
             cover={
                 <img
                 alt="example"
-                src="../../images/diversity-1.png"
+                src="../../images/web_sig.gif"
                   />}>
 
                   <Meta
